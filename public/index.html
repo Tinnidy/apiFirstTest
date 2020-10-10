@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>我是静态资源文件，我可以直接被访问</h1>
+		<!--发送http请求-->
+		<script>
+			fetch("http://192.168.1.102:3000/products").then(res=>res.json()).then(data=>{
+				cosole.log(data)
+			})
+		</script>
+	</body>
+</html>

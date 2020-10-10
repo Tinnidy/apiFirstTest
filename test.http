@@ -1,0 +1,26 @@
+@uri =  http://localhost:3000   
+GET {{uri}}/products HTTP/1.1
+###
+
+GET {{uri}}/products/5f7d189690cebe55b4ba16c5
+###
+
+POST {{uri}}/products
+# 朝接口发送json格式数据
+Content-Type: application/json    
+
+{
+    "title": "我是好的产品"
+}
+
+###
+
+PUT {{uri}}/products/5f7d189690cebe55b4ba16c5
+Content-Type: application/json
+
+{
+    "title": "我是zui好的产品"
+}
+###
+
+DELETE  {{uri}}/products/5f7d1882357809071858f299
